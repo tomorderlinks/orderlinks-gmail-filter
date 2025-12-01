@@ -158,15 +158,3 @@ if __name__ == "__main__":
     import uvicorn
     port = int(os.environ.get("PORT", 8080))
     uvicorn.run(app, host="0.0.0.0", port=port)
-```
-
-### Simplified requirements.txt
-```
-fastapi==0.115.0
-uvicorn==0.30.6
-requests==2.32.3
-```
-
-### Add Procfile
-```
-web: uvicorn main:app --host 0.0.0.0 --port $PORT
